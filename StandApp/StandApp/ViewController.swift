@@ -24,6 +24,16 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         _cameraManager.setPreview(CameraPreview)
         
         _accelManager.setup({ self.ShootResult.image = self._cameraManager.rotatedVideoImage()})
+        view1 = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height))
+        view1.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.1)
+
+        // ジェスチャーの生成
+        var aSelector = Selector("handleLongPress:")
+        var LongPressRecognizer = UILongPressGestureRecognizer(target: self, action: aSelector)
+        LongPressRecognizer.allowableMovement = 20
+        // ジェスチャーの追加
+        view1.addGestureRecognizer(LongPressRecognizer)
+        self.view.addSubview(view1)
         
     }
     
