@@ -27,14 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2412F97FA09266EDB79C22A0FC75DC27 /* PBXContainerItemProxy */ = {
+		76424A431DEDBCA4A9E90ADDEDCAC80E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 014CDE5B8B309F4A7AD1983B79681A38;
 			remoteInfo = RMPScrollingMenuBarController;
 		};
-		F520156AEF6C576A0D2671C4CE52E474 /* PBXContainerItemProxy */ = {
+		BF14081662436607405F6464F8A62651 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -232,7 +232,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0BB4D494E867CB18A097DBB11E9775C4 /* PBXTargetDependency */,
+				F464526BFD0ECA3F8EC39DEE198D6470 /* PBXTargetDependency */,
 			);
 			name = RMPScrollingMenuBarController;
 			productName = RMPScrollingMenuBarController;
@@ -266,7 +266,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				37FF35D0777927068F0BC5A15E339E49 /* PBXTargetDependency */,
+				7D0F5519F3751A679EEDBA821F6CDC75 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -344,17 +344,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BB4D494E867CB18A097DBB11E9775C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
-			target = 429BC1EDCE9FE9BD95D6FD5D029ACF64 /* RMPScrollingMenuBarController-RMPScrollingMenuBarController */;
-			targetProxy = F520156AEF6C576A0D2671C4CE52E474 /* PBXContainerItemProxy */;
-		};
-		37FF35D0777927068F0BC5A15E339E49 /* PBXTargetDependency */ = {
+		7D0F5519F3751A679EEDBA821F6CDC75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMPScrollingMenuBarController;
 			target = 014CDE5B8B309F4A7AD1983B79681A38 /* RMPScrollingMenuBarController */;
-			targetProxy = 2412F97FA09266EDB79C22A0FC75DC27 /* PBXContainerItemProxy */;
+			targetProxy = 76424A431DEDBCA4A9E90ADDEDCAC80E /* PBXContainerItemProxy */;
+		};
+		F464526BFD0ECA3F8EC39DEE198D6470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
+			target = 429BC1EDCE9FE9BD95D6FD5D029ACF64 /* RMPScrollingMenuBarController-RMPScrollingMenuBarController */;
+			targetProxy = BF14081662436607405F6464F8A62651 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
