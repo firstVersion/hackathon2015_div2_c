@@ -10,6 +10,11 @@ import Foundation
 import CoreMotion
 
 class AccelManager {
+    
+    let _interval:NSTimeInterval = 0.05
+    let _beginMagnitude:Double = 0.5
+    let _endMagnitude:Double = 0.05
+    
     private enum State {
         case Wait
         case Move
@@ -19,8 +24,8 @@ class AccelManager {
     private var currentState: State = State.Wait
     private let motionManager: CMMotionManager = CMMotionManager()
     
-    func setup() {
-        motionManager.deviceMotionUpdateInterval = 0.05
+    func setup(completion: ()->Void) {
+        motionManager.deviceMotionUpdateInterval = _interval
         
         motionManager.startDeviceMotionUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler:{deviceManager, error in
             let accel: CMAcceleration = deviceManager.userAcceleration
@@ -28,16 +33,16 @@ class AccelManager {
             
             if self.currentState == State.Stop {
                 // カメラのシャッター処理
-                println("Stop")
+                completion()
             }
         })
     }
     
     private func judgeMotion(Accel accel: CMAcceleration) -> State {
         let magnitude = accel.x*accel.x + accel.y*accel.y + accel.z*accel.z
-        if currentState == State.Wait && magnitude >= 0.5 {
+        if currentState == State.Wait && magnitude >= _beginMagnitude {
             return State.Move
-        } else if currentState == State.Move && magnitude <= 0.05 {
+        } else if currentState == State.Move && magnitude <= _endMagnitude {
             return State.Stop
         } else if currentState == State.Stop {
             return State.Wait
@@ -45,4 +50,5 @@ class AccelManager {
             return currentState
         }
     }
+    
 }
