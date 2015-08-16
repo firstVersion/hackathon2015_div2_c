@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -17,34 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gii-Xh-Ek6">
-                                <rect key="frame" x="-82" y="-8" width="667" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gii-Xh-Ek6">
+                                <rect key="frame" x="-146" y="0.0" width="667" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gii-Xh-Ek6" secondAttribute="height" multiplier="1:1" id="WRv-xF-Oy2"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eBV-R8-Ynw">
-                                <rect key="frame" x="68" y="214" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="5t9-yK-iih"/>
-                                    <constraint firstAttribute="width" constant="240" id="Lo9-tS-dv8"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="eBV-R8-Ynw" secondAttribute="centerX" id="7ZG-0r-4gC"/>
                             <constraint firstAttribute="centerX" secondItem="Gii-Xh-Ek6" secondAttribute="centerX" id="TlF-T6-IJv"/>
                             <constraint firstItem="Gii-Xh-Ek6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UaW-xb-6RU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gii-Xh-Ek6" secondAttribute="bottom" id="brS-1k-lA1"/>
-                            <constraint firstAttribute="centerY" secondItem="eBV-R8-Ynw" secondAttribute="centerY" id="sfO-zf-Klb"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="CameraPreview" destination="Gii-Xh-Ek6" id="6OO-75-ddV"/>
-                        <outlet property="ShootResult" destination="eBV-R8-Ynw" id="aSL-jp-Wuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
