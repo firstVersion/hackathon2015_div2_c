@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController ,CameraManagerDelegate{
-
+    var view1: UIView!
     let _cameraManager = CameraManager(preset: AVCaptureSessionPreset1920x1080)
     @IBOutlet weak var CameraPreview: UIImageView!
     @IBOutlet weak var ShootResult: UIImageView!
@@ -33,7 +33,20 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func handleLongPress(gestureRecognizer: UILongPressGestureRecognizer)
+    {
+        switch gestureRecognizer.state
+        {
+            case .Began:
+                println("UIGestureRecognizerState.Began")
+                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+            case .Ended:
+                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.0)
+                println("UIGestureRecognizerState.Ended")
+            default:
+        break;
+        }
+    }
 
 
 }
