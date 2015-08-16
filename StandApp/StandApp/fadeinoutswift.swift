@@ -19,7 +19,7 @@ extension UIView {
 
     /** For typical purpose, use "public func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
    func fadeIn(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
-        alpha = 0.1
+        alpha = 0.05
         self.hidden = false
         UIView.animateWithDuration(duration,
             animations: {
@@ -35,10 +35,10 @@ extension UIView {
    func fadeOut(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
         UIView.animateWithDuration(duration
             , animations: {
-                self.alpha = 0.1
+                self.alpha = 0.05
             }) { [weak self] finished in
                 self?.hidden = false
-                self?.alpha = 0.1
+                self?.alpha = 0.05
                 completed?()
         }
     }

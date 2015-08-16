@@ -23,28 +23,18 @@
                                     <constraint firstAttribute="width" secondItem="Gii-Xh-Ek6" secondAttribute="height" multiplier="1:1" id="WRv-xF-Oy2"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eBV-R8-Ynw">
-                                <rect key="frame" x="68" y="214" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="5t9-yK-iih"/>
-                                    <constraint firstAttribute="width" constant="240" id="Lo9-tS-dv8"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="eBV-R8-Ynw" secondAttribute="centerX" id="7ZG-0r-4gC"/>
                             <constraint firstAttribute="centerX" secondItem="Gii-Xh-Ek6" secondAttribute="centerX" id="TlF-T6-IJv"/>
                             <constraint firstItem="Gii-Xh-Ek6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UaW-xb-6RU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gii-Xh-Ek6" secondAttribute="bottom" id="brS-1k-lA1"/>
-                            <constraint firstAttribute="centerY" secondItem="eBV-R8-Ynw" secondAttribute="centerY" id="sfO-zf-Klb"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="CameraPreview" destination="Gii-Xh-Ek6" id="6OO-75-ddV"/>
-                        <outlet property="ShootResult" destination="eBV-R8-Ynw" id="aSL-jp-Wuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

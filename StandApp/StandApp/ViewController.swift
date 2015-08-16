@@ -12,13 +12,17 @@ class ViewController: UIViewController ,CameraManagerDelegate{
     var view1: UIView!
     let _cameraManager = CameraManager(preset: AVCaptureSessionPreset1920x1080)
     @IBOutlet weak var CameraPreview: UIImageView!
-    @IBOutlet weak var ShootResult: UIImageView!
+    let ShootResult: UIImageView! = UIImageView()
     
     let _accelManager = AccelManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.   
+        
+        
+        ShootResult.frame = self.view.bounds
+        self.view.addSubview(ShootResult)
         
         _cameraManager.delegate = self
         _cameraManager.setPreview(CameraPreview)
@@ -45,11 +49,17 @@ class ViewController: UIViewController ,CameraManagerDelegate{
 
         //描画する
         ShootResult.image = myImage
+        ShootResult.alpha = 1
         
         // アルバムに追加.
         UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
 
+         NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "DelayFadeOut", userInfo: nil, repeats: false)
         
+    }
+    
+    internal func DelayFadeOut(){
+        (ShootResult as UIView).fadeOut(duration: 0.5)
     }
     
 
