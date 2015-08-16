@@ -9,14 +9,14 @@
 import Foundation
 import Photos
 
-class PHotoManager {
-    private var assets: PHFetchResult
+class PhotoManager {
+    private var assets: PHFetchResult = PHFetchResult()
     private var index: Int = 0
     private var photo_num: Int = 0
     
-    private var window_size: CGRect
+    private var window_size: CGRect = CGRect()
     
-    init(WindowSize size: CGRect) {
+    func setup(WindowSize size: CGRect) {
         window_size = size
         
         var options = PHFetchOptions()
