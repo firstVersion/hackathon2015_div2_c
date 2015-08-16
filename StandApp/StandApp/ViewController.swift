@@ -57,6 +57,28 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onOrientationChange:", name: UIDeviceOrientationDidChangeNotification, object: nil)
+    }
+    
+    func onOrientationChange(notification: NSNotification){
+        // 現在のデバイスの向きを取得.
+        let deviceOrientation: UIDeviceOrientation!  = UIDevice.currentDevice().orientation
+        
+        // 向きの判定.
+        if UIDeviceOrientationIsLandscape(deviceOrientation) {
+            println(deviceOrientation.rawValue)
+            if deviceOrientation == .LandscapeRight {
+                ShootResult.transform = CGAffineTransformMakeRotation(-(CGFloat)(M_PI_2))
+            } else if deviceOrientation == .LandscapeLeft {
+                ShootResult.transform = CGAffineTransformMakeRotation((CGFloat)(M_PI_2))
+            }
+            
+        } else if UIDeviceOrientationIsPortrait(deviceOrientation){
+            ShootResult.transform = CGAffineTransformIdentity
+        }
+    }
+    
     func ShootMoment(){
         
         let myImage = _cameraManager.rotatedVideoImage()
@@ -111,7 +133,13 @@ class ViewController: UIViewController ,CameraManagerDelegate{
             }
     }
     
+    override func shouldAutorotate() -> Bool{
+        return false
+    }
     
+    override func supportedInterfaceOrientations() -> Int {
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    }
     
     
     
