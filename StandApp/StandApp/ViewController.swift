@@ -23,7 +23,7 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         _cameraManager.delegate = self
         _cameraManager.setPreview(CameraPreview)
         
-        _accelManager.setup({ self.ShootResult.image = self._cameraManager.rotatedVideoImage()})
+
         view1 = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height))
         view1.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.1)
 
@@ -34,6 +34,21 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         // ジェスチャーの追加
         view1.addGestureRecognizer(LongPressRecognizer)
         self.view.addSubview(view1)
+
+        _accelManager.setup(ShootMoment)
+        
+    }
+    
+    func ShootMoment(){
+        
+        let myImage = _cameraManager.rotatedVideoImage()
+
+        //描画する
+        ShootResult.image = myImage
+        
+        // アルバムに追加.
+        UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
+
         
     }
     
