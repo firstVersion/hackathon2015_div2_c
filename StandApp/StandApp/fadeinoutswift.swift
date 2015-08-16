@@ -9,16 +9,16 @@
 enum FadeType: NSTimeInterval {
     case
     Normal = 0.2,
-    Slow = 1.0
+    Slow = 0.5
 }
 
 extension UIView {
-   func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil) {
+    func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil) {
         fadeIn(duration: type.rawValue, completed: completed)
     }
-
+    
     /** For typical purpose, use "public func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
-   func fadeIn(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
+    func fadeIn(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
         alpha = 0.05
         self.hidden = false
         UIView.animateWithDuration(duration,
@@ -28,11 +28,11 @@ extension UIView {
                 completed?()
         }
     }
-   func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil) {
+    func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil) {
         fadeOut(duration: type.rawValue, completed: completed)
     }
     /** For typical purpose, use "public func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
-   func fadeOut(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
+    func fadeOut(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
         UIView.animateWithDuration(duration
             , animations: {
                 self.alpha = 0.05

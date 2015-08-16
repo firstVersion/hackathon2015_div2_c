@@ -13,12 +13,16 @@ class AccelManager {
     
     let _interval:NSTimeInterval = 0.05
     let _beginMagnitude:Double = 0.5
-    let _endMagnitude:Double = 0.05
+    let _endMagnitude:Double = 0.03
     
     private enum State {
         case Wait
         case Move
         case Stop
+    }
+    
+    init(){
+        setup({})
     }
     
     private var currentState: State = State.Wait
