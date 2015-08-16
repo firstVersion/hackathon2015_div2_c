@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D4BF834394E53B20C0CB915EEF443F /* UIViewController+RMPScrollingMenuBarControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 040190AB6E42CD00954C4FAEC2F58FA7 /* UIViewController+RMPScrollingMenuBarControllerHelper.m */; };
+		09128DCEECBBAF3B5E13FCDD409290A1 /* RMPScrollingMenuBarControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C8F20139F18C64E690596843F90105 /* RMPScrollingMenuBarControllerAnimator.h */; };
+		14C6FB4C6E89F26041CA929671711706 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44494BF6BA3E609F064C38391B65DBC6 /* Pods-dummy.m */; };
+		3681B1E8F3B83E4707DC026753C9C53C /* RMPScrollingMenuBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32777BDB974A92E38047C863CB4B8A87 /* RMPScrollingMenuBarController.h */; };
+		3A8CFEF050B171852325AB6472E0826F /* RMPScrollingMenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F48F460F6B3FD9524A51E98FF1A89 /* RMPScrollingMenuBarController.m */; };
+		49FA8EE2CA43531883D20D48D04E3E8F /* RMPScrollingMenuBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEB6FFD53D5C3546070CB25B85D724 /* RMPScrollingMenuBarItem.m */; };
+		503F5BE87977B06BC98BDBDCD7713B69 /* RMPScrollingMenuBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E24D398828210FF091E26D7D5013B4 /* RMPScrollingMenuBarController-dummy.m */; };
+		53BC4E026222FA8383F35FFA320C5CE7 /* RMPScrollingMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CE550C6C0B91073D7D6D3350642BD0 /* RMPScrollingMenuBar.m */; };
+		5E41513DBC79860D3B23D52A5A1BF2EA /* RMPScrollingMenuBarControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F57545C31F16CD15592E39B07A967016 /* RMPScrollingMenuBarControllerTransition.m */; };
+		7CA483F55E157D139FEB64E88814886A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED62DE712F9DFF4B4680FC80FD7D55E9 /* Foundation.framework */; };
+		936FA4A61931BF680AAC7A0EB41AD0A2 /* RMPScrollingMenuBarControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC844FDB3BFEBDFFD85693E3344E12C /* RMPScrollingMenuBarControllerAnimator.m */; };
+		93DDCDE7BFED9388FFB4A0CA8C29FD9B /* UIViewController+RMPScrollingMenuBarControllerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 454A816A66DEFDDA71317600C4103FD6 /* UIViewController+RMPScrollingMenuBarControllerHelper.h */; };
+		998AE6385DFE1D041A937E6E4B5351A9 /* RMPScrollingMenuBarControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F476DDFAE620A65BEDC341E7700371 /* RMPScrollingMenuBarControllerTransition.h */; };
+		B98AE287261971B5EC7F37872180F947 /* RMPScrollingMenuBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CACB9D62045AF2697ECAD5B342452AC /* RMPScrollingMenuBarItem.h */; };
+		BCCD762C2269A3FFF46C01947575CD8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E52EA16382D9412F2B54EC99B289D16 /* UIKit.framework */; };
+		F35539DFAB620E8533196A047CC3217F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED62DE712F9DFF4B4680FC80FD7D55E9 /* Foundation.framework */; };
+		FFDEE342A9CF77DEFA20C3B920829CB6 /* RMPScrollingMenuBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C58EF36D2036CF70040B7D3A6329A6 /* RMPScrollingMenuBar.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2412F97FA09266EDB79C22A0FC75DC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 014CDE5B8B309F4A7AD1983B79681A38;
+			remoteInfo = RMPScrollingMenuBarController;
+		};
+		F520156AEF6C576A0D2671C4CE52E474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429BC1EDCE9FE9BD95D6FD5D029ACF64;
+			remoteInfo = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009F48F460F6B3FD9524A51E98FF1A89 /* RMPScrollingMenuBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPScrollingMenuBarController.m; path = Pod/Classes/RMPScrollingMenuBarController.m; sourceTree = "<group>"; };
+		040190AB6E42CD00954C4FAEC2F58FA7 /* UIViewController+RMPScrollingMenuBarControllerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RMPScrollingMenuBarControllerHelper.m"; path = "Pod/Classes/UIViewController+RMPScrollingMenuBarControllerHelper.m"; sourceTree = "<group>"; };
+		117685E54DD5EE9F816B0BF073FE451A /* RMPScrollingMenuBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMPScrollingMenuBarController.xcconfig; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C09EE222CB0BA89775890C7D1C18754 /* libRMPScrollingMenuBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRMPScrollingMenuBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C8F20139F18C64E690596843F90105 /* RMPScrollingMenuBarControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMPScrollingMenuBarControllerAnimator.h; path = Pod/Classes/RMPScrollingMenuBarControllerAnimator.h; sourceTree = "<group>"; };
+		31A2AB8ED59C61EB50A2DE4E595FFE56 /* RMPScrollingMenuBarController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMPScrollingMenuBarController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		32777BDB974A92E38047C863CB4B8A87 /* RMPScrollingMenuBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMPScrollingMenuBarController.h; path = Pod/Classes/RMPScrollingMenuBarController.h; sourceTree = "<group>"; };
+		44494BF6BA3E609F064C38391B65DBC6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		454A816A66DEFDDA71317600C4103FD6 /* UIViewController+RMPScrollingMenuBarControllerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RMPScrollingMenuBarControllerHelper.h"; path = "Pod/Classes/UIViewController+RMPScrollingMenuBarControllerHelper.h"; sourceTree = "<group>"; };
+		4DEEB6FFD53D5C3546070CB25B85D724 /* RMPScrollingMenuBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPScrollingMenuBarItem.m; path = Pod/Classes/RMPScrollingMenuBarItem.m; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6CACB9D62045AF2697ECAD5B342452AC /* RMPScrollingMenuBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMPScrollingMenuBarItem.h; path = Pod/Classes/RMPScrollingMenuBarItem.h; sourceTree = "<group>"; };
+		7CC844FDB3BFEBDFFD85693E3344E12C /* RMPScrollingMenuBarControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPScrollingMenuBarControllerAnimator.m; path = Pod/Classes/RMPScrollingMenuBarControllerAnimator.m; sourceTree = "<group>"; };
+		87CE550C6C0B91073D7D6D3350642BD0 /* RMPScrollingMenuBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPScrollingMenuBar.m; path = Pod/Classes/RMPScrollingMenuBar.m; sourceTree = "<group>"; };
+		8E52EA16382D9412F2B54EC99B289D16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RMPScrollingMenuBarController-Private.xcconfig"; sourceTree = "<group>"; };
+		B6F476DDFAE620A65BEDC341E7700371 /* RMPScrollingMenuBarControllerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMPScrollingMenuBarControllerTransition.h; path = Pod/Classes/RMPScrollingMenuBarControllerTransition.h; sourceTree = "<group>"; };
+		BA04FFEC05C7F80C8FBB62411ABBF8C0 /* RMPScrollingMenuBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPScrollingMenuBarController-prefix.pch"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF8B2F0CC6709570505D599E36E66508 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		C06D6E03B934483262328CE1AAC32B5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EEBB689BB0D9F5879C93706829DCB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E8E24D398828210FF091E26D7D5013B4 /* RMPScrollingMenuBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMPScrollingMenuBarController-dummy.m"; sourceTree = "<group>"; };
+		ED62DE712F9DFF4B4680FC80FD7D55E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F57545C31F16CD15592E39B07A967016 /* RMPScrollingMenuBarControllerTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPScrollingMenuBarControllerTransition.m; path = Pod/Classes/RMPScrollingMenuBarControllerTransition.m; sourceTree = "<group>"; };
+		F8C58EF36D2036CF70040B7D3A6329A6 /* RMPScrollingMenuBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMPScrollingMenuBar.h; path = Pod/Classes/RMPScrollingMenuBar.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57E48038200F7083D8CE700D93F015D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788E3EB7C31D514F915318851B058389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35539DFAB620E8533196A047CC3217F /* Foundation.framework in Frameworks */,
+				BCCD762C2269A3FFF46C01947575CD8E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAFDAAD322DFCC30ABF55CFEAFB3790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA483F55E157D139FEB64E88814886A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D8DB12DD2187941550236A99075D4C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				117685E54DD5EE9F816B0BF073FE451A /* RMPScrollingMenuBarController.xcconfig */,
+				A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */,
+				E8E24D398828210FF091E26D7D5013B4 /* RMPScrollingMenuBarController-dummy.m */,
+				BA04FFEC05C7F80C8FBB62411ABBF8C0 /* RMPScrollingMenuBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RMPScrollingMenuBarController";
+			sourceTree = "<group>";
+		};
+		1EF542F229A27B6B7110A252A070EE95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA34C5109F0E6C7A0D6DECD3E24D5F4D /* RMPScrollingMenuBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				1EF542F229A27B6B7110A252A070EE95 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				44494BF6BA3E609F064C38391B65DBC6 /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				E0EEBB689BB0D9F5879C93706829DCB0 /* Pods.debug.xcconfig */,
+				BF8B2F0CC6709570505D599E36E66508 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		AA34C5109F0E6C7A0D6DECD3E24D5F4D /* RMPScrollingMenuBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F8C58EF36D2036CF70040B7D3A6329A6 /* RMPScrollingMenuBar.h */,
+				87CE550C6C0B91073D7D6D3350642BD0 /* RMPScrollingMenuBar.m */,
+				32777BDB974A92E38047C863CB4B8A87 /* RMPScrollingMenuBarController.h */,
+				009F48F460F6B3FD9524A51E98FF1A89 /* RMPScrollingMenuBarController.m */,
+				21C8F20139F18C64E690596843F90105 /* RMPScrollingMenuBarControllerAnimator.h */,
+				7CC844FDB3BFEBDFFD85693E3344E12C /* RMPScrollingMenuBarControllerAnimator.m */,
+				B6F476DDFAE620A65BEDC341E7700371 /* RMPScrollingMenuBarControllerTransition.h */,
+				F57545C31F16CD15592E39B07A967016 /* RMPScrollingMenuBarControllerTransition.m */,
+				6CACB9D62045AF2697ECAD5B342452AC /* RMPScrollingMenuBarItem.h */,
+				4DEEB6FFD53D5C3546070CB25B85D724 /* RMPScrollingMenuBarItem.m */,
+				454A816A66DEFDDA71317600C4103FD6 /* UIViewController+RMPScrollingMenuBarControllerHelper.h */,
+				040190AB6E42CD00954C4FAEC2F58FA7 /* UIViewController+RMPScrollingMenuBarControllerHelper.m */,
+				1D8DB12DD2187941550236A99075D4C7 /* Support Files */,
+			);
+			path = RMPScrollingMenuBarController;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A2AB8ED59C61EB50A2DE4E595FFE56 /* RMPScrollingMenuBarController.bundle */,
+				C06D6E03B934483262328CE1AAC32B5A /* libPods.a */,
+				1C09EE222CB0BA89775890C7D1C18754 /* libRMPScrollingMenuBarController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED62DE712F9DFF4B4680FC80FD7D55E9 /* Foundation.framework */,
+				8E52EA16382D9412F2B54EC99B289D16 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F5F7F87505ECAE554FD190489D57B3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDEE342A9CF77DEFA20C3B920829CB6 /* RMPScrollingMenuBar.h in Headers */,
+				3681B1E8F3B83E4707DC026753C9C53C /* RMPScrollingMenuBarController.h in Headers */,
+				09128DCEECBBAF3B5E13FCDD409290A1 /* RMPScrollingMenuBarControllerAnimator.h in Headers */,
+				998AE6385DFE1D041A937E6E4B5351A9 /* RMPScrollingMenuBarControllerTransition.h in Headers */,
+				B98AE287261971B5EC7F37872180F947 /* RMPScrollingMenuBarItem.h in Headers */,
+				93DDCDE7BFED9388FFB4A0CA8C29FD9B /* UIViewController+RMPScrollingMenuBarControllerHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		014CDE5B8B309F4A7AD1983B79681A38 /* RMPScrollingMenuBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC1EA1603D3B714AA5FB3D5C531085A /* Build configuration list for PBXNativeTarget "RMPScrollingMenuBarController" */;
+			buildPhases = (
+				E31D0B7A945188178FC3A9AF58EA8F46 /* Sources */,
+				788E3EB7C31D514F915318851B058389 /* Frameworks */,
+				8F5F7F87505ECAE554FD190489D57B3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB4D494E867CB18A097DBB11E9775C4 /* PBXTargetDependency */,
+			);
+			name = RMPScrollingMenuBarController;
+			productName = RMPScrollingMenuBarController;
+			productReference = 1C09EE222CB0BA89775890C7D1C18754 /* libRMPScrollingMenuBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		429BC1EDCE9FE9BD95D6FD5D029ACF64 /* RMPScrollingMenuBarController-RMPScrollingMenuBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85430E121979C948CEB14B5F46F9095E /* Build configuration list for PBXNativeTarget "RMPScrollingMenuBarController-RMPScrollingMenuBarController" */;
+			buildPhases = (
+				B1900C855D37842AAE7C2481BFF0E597 /* Sources */,
+				57E48038200F7083D8CE700D93F015D1 /* Frameworks */,
+				369DAD736B441977CC4A8B8796D0A362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
+			productName = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
+			productReference = 31A2AB8ED59C61EB50A2DE4E595FFE56 /* RMPScrollingMenuBarController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A0CB84719FDECB5BFF22809AAB4D0D9B /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6F4F781304245A46B9350593B697E8B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				EEA568E64DAC98576B7BAE4CCFECEC34 /* Sources */,
+				9FAFDAAD322DFCC30ABF55CFEAFB3790 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37FF35D0777927068F0BC5A15E339E49 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = C06D6E03B934483262328CE1AAC32B5A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0CB84719FDECB5BFF22809AAB4D0D9B /* Pods */,
+				014CDE5B8B309F4A7AD1983B79681A38 /* RMPScrollingMenuBarController */,
+				429BC1EDCE9FE9BD95D6FD5D029ACF64 /* RMPScrollingMenuBarController-RMPScrollingMenuBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		369DAD736B441977CC4A8B8796D0A362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1900C855D37842AAE7C2481BFF0E597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31D0B7A945188178FC3A9AF58EA8F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BC4E026222FA8383F35FFA320C5CE7 /* RMPScrollingMenuBar.m in Sources */,
+				503F5BE87977B06BC98BDBDCD7713B69 /* RMPScrollingMenuBarController-dummy.m in Sources */,
+				3A8CFEF050B171852325AB6472E0826F /* RMPScrollingMenuBarController.m in Sources */,
+				936FA4A61931BF680AAC7A0EB41AD0A2 /* RMPScrollingMenuBarControllerAnimator.m in Sources */,
+				5E41513DBC79860D3B23D52A5A1BF2EA /* RMPScrollingMenuBarControllerTransition.m in Sources */,
+				49FA8EE2CA43531883D20D48D04E3E8F /* RMPScrollingMenuBarItem.m in Sources */,
+				02D4BF834394E53B20C0CB915EEF443F /* UIViewController+RMPScrollingMenuBarControllerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA568E64DAC98576B7BAE4CCFECEC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C6FB4C6E89F26041CA929671711706 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB4D494E867CB18A097DBB11E9775C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RMPScrollingMenuBarController-RMPScrollingMenuBarController";
+			target = 429BC1EDCE9FE9BD95D6FD5D029ACF64 /* RMPScrollingMenuBarController-RMPScrollingMenuBarController */;
+			targetProxy = F520156AEF6C576A0D2671C4CE52E474 /* PBXContainerItemProxy */;
+		};
+		37FF35D0777927068F0BC5A15E339E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RMPScrollingMenuBarController;
+			target = 014CDE5B8B309F4A7AD1983B79681A38 /* RMPScrollingMenuBarController */;
+			targetProxy = 2412F97FA09266EDB79C22A0FC75DC27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29D120332D6D7B85EC680722E80A5E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RMPScrollingMenuBarController/RMPScrollingMenuBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4F62BA713D5410A4133A96768EE1E35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EEBB689BB0D9F5879C93706829DCB0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7330FEB7CEA61D11E5388B139C8A0DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RMPScrollingMenuBarController/RMPScrollingMenuBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D33CAAB70EA398EAB6EC18722F54E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8B2F0CC6709570505D599E36E66508 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB0973569DC810CC76614495E2020563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMPScrollingMenuBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DCDD1E0AB5EFB9F73623162162D9F3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A99BF9EBE6DDEB1CB822662636FDF1A2 /* RMPScrollingMenuBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMPScrollingMenuBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AC1EA1603D3B714AA5FB3D5C531085A /* Build configuration list for PBXNativeTarget "RMPScrollingMenuBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7330FEB7CEA61D11E5388B139C8A0DAC /* Debug */,
+				29D120332D6D7B85EC680722E80A5E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85430E121979C948CEB14B5F46F9095E /* Build configuration list for PBXNativeTarget "RMPScrollingMenuBarController-RMPScrollingMenuBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDD1E0AB5EFB9F73623162162D9F3EB /* Debug */,
+				CB0973569DC810CC76614495E2020563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6F4F781304245A46B9350593B697E8B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F62BA713D5410A4133A96768EE1E35E /* Debug */,
+				8D33CAAB70EA398EAB6EC18722F54E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
