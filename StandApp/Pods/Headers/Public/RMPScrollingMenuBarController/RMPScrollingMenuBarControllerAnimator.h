@@ -1,0 +1,1 @@
+../../../RMPScrollingMenuBarController/Pod/Classes/RMPScrollingMenuBarControllerAnimator.h
