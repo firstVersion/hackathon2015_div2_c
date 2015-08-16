@@ -22,7 +22,7 @@ var view1: UIView!
 
         // ビューの生成
         view1 = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height))
-        view1.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.5)
+        view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.0)
 
         // ジェスチャーの生成
         var aSelector = Selector("handleLongPress:")

@@ -19,6 +19,7 @@
 		689210AD1B807B3400062E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689210AC1B807B3400062E94 /* Images.xcassets */; };
 		689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689210AE1B807B3400062E94 /* LaunchScreen.xib */; };
 		689210BC1B807B3400062E94 /* StandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210BB1B807B3400062E94 /* StandAppTests.swift */; };
+		CBD7CC561B80A0AE00611E54 /* AccelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CC551B80A0AE00611E54 /* AccelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		689210B51B807B3400062E94 /* StandAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210BA1B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210BB1B807B3400062E94 /* StandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandAppTests.swift; sourceTree = "<group>"; };
+		CBD7CC551B80A0AE00611E54 /* AccelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				523216421B808DEC0039F7D6 /* CameraManager.m */,
+				CBD7CC551B80A0AE00611E54 /* AccelManager.swift */,
 				523216431B808DEC0039F7D6 /* CameraManager.h */,
 				689210A51B807B3400062E94 /* AppDelegate.swift */,
 				523216391B808C340039F7D6 /* StandApp-Bridging-Header.h */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689210A81B807B3400062E94 /* ViewController.swift in Sources */,
+				CBD7CC561B80A0AE00611E54 /* AccelManager.swift in Sources */,
 				689210A61B807B3400062E94 /* AppDelegate.swift in Sources */,
 				523216441B808DEC0039F7D6 /* CameraManager.m in Sources */,
 				5232163B1B808C340039F7D6 /* StandApp-Bridging-Header.m in Sources */,
