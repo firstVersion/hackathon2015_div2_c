@@ -1,0 +1,10 @@
+PODS:
+  - RMPScrollingMenuBarController (1.0.6)
+
+DEPENDENCIES:
+  - RMPScrollingMenuBarController
+
+SPEC CHECKSUMS:
+  RMPScrollingMenuBarController: d94726545e0289affb0440e9145bb7b544cf79b8
+
+COCOAPODS: 0.38.2
