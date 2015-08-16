@@ -31,10 +31,18 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         var aSelector = Selector("handleLongPress:")
         var LongPressRecognizer = UILongPressGestureRecognizer(target: self, action: aSelector)
         LongPressRecognizer.allowableMovement = 20
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Left
+        
         // ジェスチャーの追加
         view1.addGestureRecognizer(LongPressRecognizer)
-        self.view.addSubview(view1)
+        self.view.addGestureRecognizer(swipeRight)
+        self.view.addGestureRecognizer(swipeLeft)
 
+        
+        self.view.addSubview(view1)
         _accelManager.setup(ShootMoment)
         
     }
@@ -72,6 +80,20 @@ class ViewController: UIViewController ,CameraManagerDelegate{
             default:
         break;
         }
+    }
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+    
+            switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.Right:
+                println("Right")
+                case UISwipeGestureRecognizerDirection.Left:
+                println("Left")
+                default:
+                break
+                }
+            }
     }
     
     
