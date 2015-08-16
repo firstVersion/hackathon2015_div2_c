@@ -13,6 +13,7 @@
 		523216411B808D940039F7D6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523216401B808D940039F7D6 /* CoreVideo.framework */; };
 		523216441B808DEC0039F7D6 /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 523216421B808DEC0039F7D6 /* CameraManager.m */; };
 		523216461B808E260039F7D6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523216451B808E260039F7D6 /* CoreImage.framework */; };
+		523216481B8092010039F7D6 /* AccelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523216471B8092010039F7D6 /* AccelManager.swift */; };
 		689210A61B807B3400062E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210A51B807B3400062E94 /* AppDelegate.swift */; };
 		689210A81B807B3400062E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210A71B807B3400062E94 /* ViewController.swift */; };
 		689210AB1B807B3400062E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689210A91B807B3400062E94 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		523216421B808DEC0039F7D6 /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
 		523216431B808DEC0039F7D6 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		523216451B808E260039F7D6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		523216471B8092010039F7D6 /* AccelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelManager.swift; sourceTree = "<group>"; };
 		689210A01B807B3400062E94 /* StandApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210A41B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210A51B807B3400062E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		689210A21B807B3400062E94 /* StandApp */ = {
 			isa = PBXGroup;
 			children = (
+				523216471B8092010039F7D6 /* AccelManager.swift */,
 				523216421B808DEC0039F7D6 /* CameraManager.m */,
 				523216431B808DEC0039F7D6 /* CameraManager.h */,
 				689210A51B807B3400062E94 /* AppDelegate.swift */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689210A81B807B3400062E94 /* ViewController.swift in Sources */,
+				523216481B8092010039F7D6 /* AccelManager.swift in Sources */,
 				689210A61B807B3400062E94 /* AppDelegate.swift in Sources */,
 				523216441B808DEC0039F7D6 /* CameraManager.m in Sources */,
 				5232163B1B808C340039F7D6 /* StandApp-Bridging-Header.m in Sources */,
