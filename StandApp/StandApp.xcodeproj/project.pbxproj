@@ -20,6 +20,7 @@
 		689210AD1B807B3400062E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689210AC1B807B3400062E94 /* Images.xcassets */; };
 		689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689210AE1B807B3400062E94 /* LaunchScreen.xib */; };
 		689210BC1B807B3400062E94 /* StandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210BB1B807B3400062E94 /* StandAppTests.swift */; };
+		CBD7CC5A1B80BE4000611E54 /* fadeinoutswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		689210B51B807B3400062E94 /* StandAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210BA1B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210BB1B807B3400062E94 /* StandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandAppTests.swift; sourceTree = "<group>"; };
+		CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fadeinoutswift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				523216471B8092010039F7D6 /* AccelManager.swift */,
+				CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */,
 				523216421B808DEC0039F7D6 /* CameraManager.m */,
 				523216431B808DEC0039F7D6 /* CameraManager.h */,
 				689210A51B807B3400062E94 /* AppDelegate.swift */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689210A81B807B3400062E94 /* ViewController.swift in Sources */,
+				CBD7CC5A1B80BE4000611E54 /* fadeinoutswift.swift in Sources */,
 				523216481B8092010039F7D6 /* AccelManager.swift in Sources */,
 				689210A61B807B3400062E94 /* AppDelegate.swift in Sources */,
 				523216441B808DEC0039F7D6 /* CameraManager.m in Sources */,

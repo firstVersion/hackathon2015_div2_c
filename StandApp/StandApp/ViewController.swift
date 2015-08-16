@@ -25,7 +25,7 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         
         _accelManager.setup({ self.ShootResult.image = self._cameraManager.rotatedVideoImage()})
         view1 = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height))
-        view1.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.1)
+        
 
         // ジェスチャーの生成
         var aSelector = Selector("handleLongPress:")
@@ -49,14 +49,18 @@ class ViewController: UIViewController ,CameraManagerDelegate{
         {
             case .Began:
                 println("UIGestureRecognizerState.Began")
-                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1.0)
+                view1.fadeIn(type: .Slow)
             case .Ended:
-                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.0)
+                view1.fadeOut(type: .Normal)
                 println("UIGestureRecognizerState.Ended")
             default:
         break;
         }
     }
+    
+    
+    
 
 
 }
