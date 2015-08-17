@@ -81,7 +81,19 @@ class ViewController: UIViewController ,CameraManagerDelegate{
     
     func ShootMoment(){
         
-        let myImage = _cameraManager.rotatedVideoImage()
+        var myImage = _cameraManager.rotatedVideoImage()
+        var a = _cameraManager.videoOrientaion
+        
+        if ( a == UIDeviceOrientation.LandscapeLeft){
+            myImage = UIImage(CGImage: myImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Left)
+            ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((180.0 * M_PI)/180))
+        } else
+        if( a == UIDeviceOrientation.LandscapeRight ){
+            myImage = UIImage(CGImage: myImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)
+            ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((180.0 * M_PI)/180))
+        }else{
+            ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((0.0 * M_PI)/180))
+        }
         
         //描画する
         ShootResult.image = myImage
