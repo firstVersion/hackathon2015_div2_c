@@ -15,6 +15,7 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
     let ShootResult: UIImageView! = UIImageView()
     let _accelManager = AccelManager()
     let _photoManager = PhotoManager()
+    let scrView = MyScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,57 +40,66 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         _cameraManager.setPreview(CameraPreview)
         
         
+        
         //ここからスクロールレクトの記述
         
-        //UIImageに画像の名前を指定します
-        let img1 = UIImage(named:"img1.jpg");
-        let img2 = UIImage(named:"img2.jpg");
-        let img3 = UIImage(named:"img3.jpg");
-        
         //UIImageViewにUIIimageを追加
-        let imageView1 = UIImageView(image:img1)
-        let imageView2 = UIImageView(image:img2)
-        let imageView3 = UIImageView(image:img3)
         let imageBlack = UIImageView()
         imageBlack.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1)
         
-        //UIScrollViewを作成します
-        let scrView = MyScrollView()
+        //UIScrollViewの初期化
         scrView.delegate = self
         
         //表示位置 + 1ページ分のサイズ
         scrView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         
         //全体のサイズ
-        scrView.contentSize = CGSizeMake(self.view.frame.size.width*4, self.view.frame.size.height)
+        scrView.contentSize = CGSizeMake(self.view.frame.size.width * 1, self.view.frame.size.height)
         
         //UIImageViewのサイズと位置を決めます
         //左右に並べる
-        imageView1.frame = CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.height)
-        imageView2.frame = CGRectMake(self.view.frame.size.width * 1, 0, self.view.frame.size.width, self.view.frame.size.height)
-        imageView3.frame = CGRectMake(self.view.frame.size.width * 0, 0, self.view.frame.size.width, self.view.frame.size.height)
         imageBlack.frame = CGRectMake(self.view.frame.size.width * -1, 0, self.view.frame.size.width, self.view.frame.size.height)
         
         
         //viewに追加します
         self.view.addSubview(scrView)
-        scrView.addSubview(imageView1)
-        scrView.addSubview(imageView2)
-        scrView.addSubview(imageView3)
         scrView.addSubview(imageBlack)
         
         // １ページ単位でスクロールさせる
         scrView.pagingEnabled = true
         
         //scroll画面の初期位置
-        scrView.contentOffset = CGPointMake(self.view.frame.size.width * 3, 0);
-        
+        scrView.contentOffset = CGPointMake(self.view.frame.size.width * 0, 0);
         
         view1 = UIView(frame: self.view.frame)
         view1.userInteractionEnabled = false
         self.view.addSubview(view1)
 
+    }
+    
+    func updateScrollView(){
         
+        _photoManager.addPhoto()
+        
+        //UIImageViewにUIIimageを追加
+        var newImage = UIImageView()
+        _photoManager.setNewerImager(newImage)
+        
+        //全体のサイズ
+        var newLength = CGFloat(_photoManager.getCount()+1)
+        scrView.contentSize = CGSizeMake(self.view.frame.size.width * newLength, self.view.frame.size.height)
+        
+        //UIImageViewのサイズと位置を決めます
+        var newPos = CGFloat(_photoManager.getCount()-1)
+        newImage.frame = CGRectMake(self.view.frame.size.width * newPos, 0, self.view.frame.size.width, self.view.frame.size.height)
+        
+        
+        //viewに追加します
+        scrView.addSubview(newImage)
+        
+        //scroll画面の初期位置
+        scrView.contentOffset = CGPointMake(self.view.frame.size.width * newLength, 0);
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -207,8 +217,8 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         UIImageWriteToSavedPhotosAlbum(myImage, self, nil, nil)
         
         NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "DelayFadeOut", userInfo: nil, repeats: false)
-        
-        _photoManager.addPhoto()
+
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateScrollView", userInfo: nil, repeats: false)
         
     }
     
