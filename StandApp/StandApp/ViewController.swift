@@ -22,7 +22,7 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         
         self.view.userInteractionEnabled = true
         
-        
+        //ライブラリ参照クラスの初期化
         _photoManager.setup(WindowSize: self.view.frame)
         
         //大きさの初期化
@@ -55,7 +55,6 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         self.view.addGestureRecognizer(swipeRight)
         self.view.addGestureRecognizer(swipeLeft)
         */
-        
         
         
         
@@ -105,7 +104,7 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         scrView.contentOffset = CGPointMake(self.view.frame.size.width * 3, 0);
         
         
-        view1 = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height))
+        view1 = UIView(frame: self.view.frame)
         view1.userInteractionEnabled = false
         self.view.addSubview(view1)
 
@@ -134,7 +133,7 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         }
     }
 
-    var _startFadeDate = NSDate()
+    var _startFadeDate : NSDate = NSDate()
     var _touchCount:Int = 0
     var touchCount:Int{
         get{
@@ -147,15 +146,17 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
                 _touchCount = 0
             }
             if(tmp>0 && _touchCount == 0){
+                //戻る
                 if(_startFadeDate.timeIntervalSinceNow < FadeType.Normal.rawValue){
-                    let g = CGFloat(_startFadeDate.timeIntervalSinceNow)
-                    let r = CGFloat(FadeType.Normal.rawValue)
-                    view1.alpha = (g/r)
+                    let g: CGFloat = CGFloat(FadeType.Normal.rawValue)
+                    let n: CGFloat = CGFloat(_startFadeDate.timeIntervalSinceNow)
+                    view1.alpha = (n / g)
                 }
                 view1.fadeOut(type: .Normal)
             }else if(tmp == 0 && _touchCount > 0){
+                //ブラックアウト
                 _startFadeDate = NSDate()
-                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1.0)
+                view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1)
                 view1.fadeIn(type: .Slow)
             }
         }
@@ -227,29 +228,14 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
     }
     
     internal func DelayFadeOut(){
-        (ShootResult as UIView).fadeOut(duration: 0.5,completed: {self.ShootResult.alpha = 0})
+        (ShootResult as UIView).fadeOut(duration: 0.5)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func handleLongPress(gestureRecognizer: UILongPressGestureRecognizer)
-    {
-        switch gestureRecognizer.state
-        {
-        case .Began:
-            println("UIGestureRecognizerState.Began")
-            view1.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1.0)
-            view1.fadeIn(type: .Slow)
-        case .Ended:
-            view1.fadeOut(type: .Normal)
-            println("UIGestureRecognizerState.Ended")
-        default:
-            break;
-        }
-    }
+
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
