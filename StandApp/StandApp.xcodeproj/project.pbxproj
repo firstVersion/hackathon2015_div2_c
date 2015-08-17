@@ -20,6 +20,8 @@
 		689210AD1B807B3400062E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689210AC1B807B3400062E94 /* Images.xcassets */; };
 		689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689210AE1B807B3400062E94 /* LaunchScreen.xib */; };
 		689210BC1B807B3400062E94 /* StandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210BB1B807B3400062E94 /* StandAppTests.swift */; };
+		CBCA8EE51B81934C009E1242 /* lunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA8EE41B81934C009E1242 /* lunch@2x.png */; };
+		CBCA8EE71B819424009E1242 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA8EE61B819424009E1242 /* icon@2x.png */; };
 		CBD7CC5A1B80BE4000611E54 /* fadeinoutswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */; };
 		F3632830AEF644635EF9CA98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E26E6941113802D2DDC68C /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		689210B51B807B3400062E94 /* StandAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210BA1B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210BB1B807B3400062E94 /* StandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandAppTests.swift; sourceTree = "<group>"; };
+		CBCA8EE41B81934C009E1242 /* lunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lunch@2x.png"; sourceTree = "<group>"; };
+		CBCA8EE61B819424009E1242 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fadeinoutswift.swift; sourceTree = "<group>"; };
 		D6E26E6941113802D2DDC68C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89A9EBF4C65A9949E85E958 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		689210A21B807B3400062E94 /* StandApp */ = {
 			isa = PBXGroup;
 			children = (
+				CBCA8EE31B819334009E1242 /* lunchimage */,
 				523216471B8092010039F7D6 /* AccelManager.swift */,
 				CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */,
 				523216421B808DEC0039F7D6 /* CameraManager.m */,
@@ -149,6 +154,15 @@
 				689210BA1B807B3400062E94 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBCA8EE31B819334009E1242 /* lunchimage */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA8EE61B819424009E1242 /* icon@2x.png */,
+				CBCA8EE41B81934C009E1242 /* lunch@2x.png */,
+			);
+			name = lunchimage;
 			sourceTree = "<group>";
 		};
 		D27D9E204D395D1B5602E172 /* Frameworks */ = {
@@ -253,6 +267,8 @@
 				689210AB1B807B3400062E94 /* Main.storyboard in Resources */,
 				689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */,
 				689210AD1B807B3400062E94 /* Images.xcassets in Resources */,
+				CBCA8EE51B81934C009E1242 /* lunch@2x.png in Resources */,
+				CBCA8EE71B819424009E1242 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
