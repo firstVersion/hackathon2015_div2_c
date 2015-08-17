@@ -21,6 +21,8 @@
 		689210AD1B807B3400062E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689210AC1B807B3400062E94 /* Images.xcassets */; };
 		689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689210AE1B807B3400062E94 /* LaunchScreen.xib */; };
 		689210BC1B807B3400062E94 /* StandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210BB1B807B3400062E94 /* StandAppTests.swift */; };
+		CB29A0B81B81BAB900C9A781 /* dec1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB29A0B71B81BAB900C9A781 /* dec1@2x.png */; };
+		CB29A0BA1B81BADB00C9A781 /* dec2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB29A0B91B81BADB00C9A781 /* dec2@2x.png */; };
 		CBCA8EE51B81934C009E1242 /* lunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA8EE41B81934C009E1242 /* lunch@2x.png */; };
 		CBCA8EE71B819424009E1242 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA8EE61B819424009E1242 /* icon@2x.png */; };
 		CBD7CC5A1B80BE4000611E54 /* fadeinoutswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */; };
@@ -58,6 +60,8 @@
 		689210B51B807B3400062E94 /* StandAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210BA1B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210BB1B807B3400062E94 /* StandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandAppTests.swift; sourceTree = "<group>"; };
+		CB29A0B71B81BAB900C9A781 /* dec1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dec1@2x.png"; sourceTree = "<group>"; };
+		CB29A0B91B81BADB00C9A781 /* dec2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dec2@2x.png"; sourceTree = "<group>"; };
 		CBCA8EE41B81934C009E1242 /* lunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lunch@2x.png"; sourceTree = "<group>"; };
 		CBCA8EE61B819424009E1242 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CBD7CC591B80BE4000611E54 /* fadeinoutswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fadeinoutswift.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 		CBCA8EE31B819334009E1242 /* lunchimage */ = {
 			isa = PBXGroup;
 			children = (
+				CB29A0B91B81BADB00C9A781 /* dec2@2x.png */,
+				CB29A0B71B81BAB900C9A781 /* dec1@2x.png */,
 				52E9EB271B81A14900158C16 /* PhotoManager.swift */,
 				CBCA8EE61B819424009E1242 /* icon@2x.png */,
 				CBCA8EE41B81934C009E1242 /* lunch@2x.png */,
@@ -269,7 +275,9 @@
 			files = (
 				689210AB1B807B3400062E94 /* Main.storyboard in Resources */,
 				689210B01B807B3400062E94 /* LaunchScreen.xib in Resources */,
+				CB29A0BA1B81BADB00C9A781 /* dec2@2x.png in Resources */,
 				689210AD1B807B3400062E94 /* Images.xcassets in Resources */,
+				CB29A0B81B81BAB900C9A781 /* dec1@2x.png in Resources */,
 				CBCA8EE51B81934C009E1242 /* lunch@2x.png in Resources */,
 				CBCA8EE71B819424009E1242 /* icon@2x.png in Resources */,
 			);
