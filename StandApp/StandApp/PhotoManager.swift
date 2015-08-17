@@ -16,6 +16,10 @@ class PhotoManager {
     
     private var window_size: CGRect = CGRect()
     
+    internal func getCount() -> Int {
+        return photo_num
+    }
+    
     func setup(WindowSize size: CGRect) {
         window_size = size
         
@@ -25,6 +29,23 @@ class PhotoManager {
         ]
         
         assets = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
+    }
+    
+    func setNewerImager(refImg:UIImageView ){
+        
+        var options = PHFetchOptions()
+        options.sortDescriptors = [
+            NSSortDescriptor(key: "creationDate", ascending: false)
+        ]
+        
+        assets = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
+        
+        var asset: PHAsset = assets.firstObject as! PHAsset
+        let manager: PHImageManager = PHImageManager()
+        manager.requestImageForAsset(asset, targetSize: CGSizeMake(window_size.width, window_size.height), contentMode: .AspectFill, options: nil) { (image, info) -> Void in
+            refImg.image = image
+        }
+
     }
     
     func getImage() -> UIImage? {
@@ -45,9 +66,9 @@ class PhotoManager {
     
     func next() {
         index++
-        if index >= photo_num {
-            index = photo_num-1
-        }
+//        if index >= photo_num {
+//            index = photo_num-1
+//        }
     }
     
     func previous() {
