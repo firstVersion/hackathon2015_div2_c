@@ -39,25 +39,6 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         _cameraManager.setPreview(CameraPreview)
         
         
-        
-        /*
-        // ジェスチャーの生成
-        var aSelector = Selector("handleLongPress:")
-        var LongPressRecognizer = UILongPressGestureRecognizer(target: self, action: aSelector)
-        LongPressRecognizer.allowableMovement = 20
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Left
-        
-        // ジェスチャーの追加
-        view1.addGestureRecognizer(LongPressRecognizer)
-        self.view.addGestureRecognizer(swipeRight)
-        self.view.addGestureRecognizer(swipeLeft)
-        */
-        
-        
-        
         //ここからスクロールレクトの記述
         
         //UIImageに画像の名前を指定します
@@ -210,6 +191,10 @@ class ViewController: UIViewController ,CameraManagerDelegate,UIScrollViewDelega
         if( a == UIDeviceOrientation.LandscapeRight ){
             myImage = UIImage(CGImage: myImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)
             ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((180.0 * M_PI)/180))
+        } else
+            if( a == UIDeviceOrientation.PortraitUpsideDown ){
+                myImage = UIImage(CGImage: myImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Up)
+                ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((180.0 * M_PI)/180))
         }else{
             ShootResult.transform = CGAffineTransformMakeRotation(CGFloat((0.0 * M_PI)/180))
         }
