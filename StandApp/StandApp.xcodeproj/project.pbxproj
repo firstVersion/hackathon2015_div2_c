@@ -14,6 +14,7 @@
 		523216441B808DEC0039F7D6 /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 523216421B808DEC0039F7D6 /* CameraManager.m */; };
 		523216461B808E260039F7D6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523216451B808E260039F7D6 /* CoreImage.framework */; };
 		523216481B8092010039F7D6 /* AccelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523216471B8092010039F7D6 /* AccelManager.swift */; };
+		52E9EB281B81A14900158C16 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9EB271B81A14900158C16 /* PhotoManager.swift */; };
 		689210A61B807B3400062E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210A51B807B3400062E94 /* AppDelegate.swift */; };
 		689210A81B807B3400062E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689210A71B807B3400062E94 /* ViewController.swift */; };
 		689210AB1B807B3400062E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689210A91B807B3400062E94 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		523216431B808DEC0039F7D6 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
 		523216451B808E260039F7D6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		523216471B8092010039F7D6 /* AccelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelManager.swift; sourceTree = "<group>"; };
+		52E9EB271B81A14900158C16 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		689210A01B807B3400062E94 /* StandApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689210A41B807B3400062E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689210A51B807B3400062E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		CBCA8EE31B819334009E1242 /* lunchimage */ = {
 			isa = PBXGroup;
 			children = (
+				52E9EB271B81A14900158C16 /* PhotoManager.swift */,
 				CBCA8EE61B819424009E1242 /* icon@2x.png */,
 				CBCA8EE41B81934C009E1242 /* lunch@2x.png */,
 			);
@@ -321,6 +324,7 @@
 			files = (
 				689210A81B807B3400062E94 /* ViewController.swift in Sources */,
 				CBD7CC5A1B80BE4000611E54 /* fadeinoutswift.swift in Sources */,
+				52E9EB281B81A14900158C16 /* PhotoManager.swift in Sources */,
 				523216481B8092010039F7D6 /* AccelManager.swift in Sources */,
 				689210A61B807B3400062E94 /* AppDelegate.swift in Sources */,
 				523216441B808DEC0039F7D6 /* CameraManager.m in Sources */,
